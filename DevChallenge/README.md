@@ -1,1 +1,1 @@
-Landing pae simples
+Landing page simples
