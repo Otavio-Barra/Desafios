@@ -1,0 +1,113 @@
+body {
+    margin: 10rem AUTO;
+    padding: 0;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    max-width: min(90vw, 1440px);
+    box-sizing: border-box;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', 'Fraunces', sans-serif;
+}
+
+.container {
+    text-align: left;
+    display: inline-flex;
+    height: 500px;
+    width: 650px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.container .desk {
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.mobile {
+    display: none;
+}
+
+.container .content {
+    padding: 20px 35px;
+}
+
+.container .content h2 {
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 0.3rem;
+}
+
+.container .content h1 {
+    font-family: 'Fraunces';
+    font-size: 2rem;
+}
+
+.container .content p {
+    color: hsl(228, 12%, 48%);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.container .content .value {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.container .content .value .money {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.container .content .value .Promo {
+    text-decoration: line-through;
+}
+
+.container .content button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 100%;
+    padding: 18px 0;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.container .content button:hover {
+    background-color: hsl(158, 36%, 20%);
+}
+
+.container .content button img {
+    width: auto;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    .desk {
+        display: none;
+    }
+
+    .mobile {
+        display: inline;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .container {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        height: 690px;
+        width: 350px;
+    }
+}
