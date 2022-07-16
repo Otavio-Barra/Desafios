@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+
+
+body {
+
+    width: min(90vw, 1440px);
+    margin: 0 auto;
+    background-color: #121214;
+    color: #fff;
+
+}
+
+main {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 50% 50%;
+    height: 720px;
+    margin: 5rem 0;
+
+}
+
+#content {
+    padding: 3.1rem 2.5rem;
+}
+
+#content #logo {
+    margin-bottom: 5rem;
+    width: min(30vw, 390px);
+}
+
+#content h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #08C05E;
+    margin-bottom: 1rem;
+}
+
+#content p {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+#content .longText {
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+#content form p label {
+    display: block;
+    font-weight: bold;
+    color: #A8A8A8;
+
+}
+
+.container {
+    display: flex;
+    width: clamp(42vw, 799px, 60vw);
+    margin-bottom: 3rem;
+}
+
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: none;
+}
+
+#content form input {
+    border: none;
+    position: relative;
+    width: min(50vw, 798px);
+    display: inline;
+    border-left: #08C05E 5px solid;
+    height: 3rem;
+    padding: 1rem;
+}
+
+#content form button {
+    position: relative;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    background-color: #8257E5;
+}
+
+#content .next {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#content .next a {
+    font-weight: bold;
+    color: #8257E5;
+    text-align: center;
+}
+
+#img {
+    background: url(./assets/person.png) no-repeat right;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    main {
+        display: block;
+    }
+
+    #img {
+        display: none;
+    }
+
+    #content #logo {
+        margin-bottom: 5rem;
+        width: 100%;
+    }
+}

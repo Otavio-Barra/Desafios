@@ -1,0 +1,129 @@
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 550px) {
+    body {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    .hamburguer {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    .menu {
+        padding: 30px 40px;
+    }
+
+    .container {
+        padding: 0%;
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 10px auto;
+        align-items: center;
+    }
+
+    .conteudo img {
+        display: inline;
+        position: relative;
+        margin-top: 0px;
+        margin-left: 0;
+        padding-top: 0px;
+        width: 85vw;
+    }
+
+    .conteudo .container .titulo-conteudo {
+        font-size: 11vw;
+        text-align: center;
+        margin: 0;
+    }
+
+    .conteudo .container .texto-conteudo {
+        font-size: 5.2vw;
+        margin-right: 0;
+        color: #766f68;
+        text-align: center;
+        margin-top: 30px;
+        padding: 0px 50px;
+    }
+
+    .conteudo .container {
+        justify-content: center;
+    }
+
+    .conteudo .container .botao a {
+        margin-left: 15%;
+        margin-top: 30px;
+        padding: 20px 10px;
+        width: 70%;
+        font-size: 5.3vw;
+        border-radius: 20px;
+        justify-content: center;
+    }
+
+    .menu .elemento-menu li {
+        display: none;
+    }
+
+    .hamburguer {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #checkbox-menu {
+        position: absolute;
+        opacity: 0;
+    }
+
+    label {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        height: 22px;
+        width: 30px;
+    }
+
+    label span {
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 100%;
+        border-radius: 30px;
+        background: #766f68;
+        transition: 0.25s ease-in-out;
+    }
+
+    label span:nth-child(1) {
+        top: 0;
+    }
+
+    label span:nth-child(2) {
+        top: 8px;
+    }
+
+    label span:nth-child(3) {
+        top: 16px;
+    }
+
+    #checkbox-menu:checked+label span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+
+    #checkbox-menu:checked+label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #checkbox-menu:checked+label span:nth-child(3) {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+}

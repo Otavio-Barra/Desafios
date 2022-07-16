@@ -1,0 +1,373 @@
+@import "./reset.css";
+
+
+/* Menu */
+header .container {
+    max-width: min(90vw, 1400px);
+    margin: 4rem auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .titleMenu {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+header .container #colorTitle {
+    color: #D6000D;
+}
+
+
+header .container nav #menu {
+    display: flex;
+    gap: 3rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+header .container nav #menu li a {
+    transition: 200ms;
+}
+
+header .container nav #menu li a:hover {
+    color: #D6000D;
+}
+
+.button {
+    background-color: #D6000D;
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    transition: 400ms;
+}
+
+header .container nav #menu li .button:hover {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    header .container nav #menu {
+        gap: 0;
+    }
+
+    header .container nav #menu li {
+        margin-right: 20px;
+    }
+
+    header .container nav #menu li:nth-child(4) {
+        display: none;
+    }
+
+}
+
+/*home*/
+
+main section {
+    margin: 4rem auto;
+}
+
+main section .container {
+    max-width: min(90vw, 1200px);
+    margin: 10em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+main section .container img {
+    max-width: 50%;
+}
+
+main section .container .textInicio p {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+}
+
+main section .container .textInicio h2 {
+    font-size: 4.3em;
+    margin-bottom: 4rem;
+    color: #D6000D;
+}
+
+main section .container .textInicio .button {
+    font-size: 1.6em;
+    padding: 10px 50px;
+    transition: 250ms;
+}
+
+main section .container .textInicio .button:hover {
+    font-size: 1.8em;
+}
+
+@media (max-width: 768px) {
+
+    main section .container .textInicio .button {
+        transition: 0;
+    }
+
+    main section .container img {
+        width: 100%;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    main section .container {
+        flex-direction: column;
+        gap: 4rem;
+        margin: 13em auto 20em auto;
+    }
+
+    main section .container .textInicio p {
+        font-size: 1.8em;
+    }
+
+    main section .container .textInicio h2 {
+        font-size: 4.5em;
+    }
+
+    main section .container .textInicio .button {
+        font-size: 1.9em;
+    }
+
+    main section .container .textInicio {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+
+
+}
+
+
+section .container {
+    justify-content: center;
+}
+
+section .container .list ul li {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 1.5em;
+}
+
+section .container .list ul li i {
+    padding-right: 1.3rem;
+    color: #D6000D;
+}
+
+#table {
+    margin-bottom: 20px;
+}
+
+#form {
+    margin-top: 0;
+    margin-bottom: 7em;
+}
+
+section .container .contact p {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+section .container .form {
+    display: flex;
+}
+
+section .container .form form input {
+    background-color: #DCDCDC;
+    padding: 15px 30px;
+    margin-right: 1.7em;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+section .container .form .button {
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+
+section .container .form .button:hover {
+    font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+    #table {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+
+    section .container .codar {
+        width: 100%;
+    }
+
+    section .container .list ul li {
+        font-size: 1.9em;
+        font-weight: 600;
+        margin-top: 2.3em;
+        margin-bottom: 1.8em;
+    }
+
+    section .container .contact {
+        font-size: 1.5em;
+    }
+
+    section .container .form {
+        flex-direction: column;
+        align-items: center
+    }
+
+    section .container .form form {
+        margin-bottom: 0.8em;
+    }
+
+    section .container .form form input {
+        margin-right: 0;
+        padding: 1em 1.5em;
+        font-size: 1.3em;
+        width: 100%;
+    }
+
+    section .container .form button {
+
+        padding: 1.5em 4.6em;
+        font-size: 1.7em;
+    }
+}
+
+section .container .card {
+    background-color: #DCDCDC;
+    display: flex;
+    gap: 2em;
+    border-radius: 10px;
+    padding: 2em 2em 0.5em 2em;
+}
+
+section .container .card img {
+    width: 5.3em;
+    height: 4.9em;
+    border-radius: 100%;
+}
+
+
+section .container .card .cardText p {
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+section .container .card .cardText h2 {
+    font-weight: 500;
+    margin-bottom: 0.2em;
+}
+
+@media (max-width: 768px) {
+    section .container .card .cardText p {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    section .container .card .cardText h2 {
+        font-size: 2.6em;
+    }
+
+
+
+
+}
+
+/*footer*/
+
+footer {
+    background-color: #000;
+}
+
+
+footer p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+
+footer .container {
+    max-width: min(90vw, 1400px);
+    margin: 4rem auto;
+    margin-bottom: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8vh;
+    padding-bottom: 9em;
+    align-items: flex-start;
+}
+
+footer .container .footer h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+footer .container .footer h1 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+footer .container .redeSocial i {
+    color: #D6000D;
+    font-size: 2em;
+    padding-right: 0.5em;
+}
+
+footer .container .contatos p {
+    margin-bottom: 1rem;
+}
+
+footer .container .contatos a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer .container .sobre span {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    footer .container .logo {
+        font-size: 20px;
+    }
+
+    footer .container {
+        font-size: 16px;
+    }
+}

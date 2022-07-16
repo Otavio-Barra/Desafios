@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: min(90vw, 1440px);
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+    color: #fff;
+    font-family: 'Inter', 'Lexend Deca', sans-serif;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    border-radius: 10px;
+    background-color: hsl(244, 38%, 16%);
+}
+
+.container .color {
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+    width: 100%;
+    background:
+        linear-gradient(rgb(163, 87, 210, 0.300), rgb(163, 87, 210, 0.300)),
+        url(./images/image-header-desktop.jpg) no-repeat right;
+    background-size: 100%;
+}
+
+
+.container .content {
+    padding: 4vw;
+    padding-right: 18%;
+}
+
+.container .content .title {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    margin-bottom: 2.5vw;
+    font-weight: 700;
+}
+
+.container .content span {
+    color: hsl(277, 64%, 61%);
+}
+
+.container .content .text {
+    font-size: clamp(0.8rem, 1.5vw, 1.4rem);
+    font-weight: 200;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: clamp(1.8rem, 2.5vw, 2.8rem);
+    margin-bottom: 4vw;
+    font-family: 'Lexend Deca';
+}
+
+.container .content #infos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .content #infos h2 {
+    font-size: clamp(1rem, 2vw, 2rem);
+    margin-bottom: 10%;
+}
+
+.container .content #infos p {
+    font-size: clamp(0.7rem, 1.3vw, 1.2rem);
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 200;
+    font-family: 'Lexend Deca';
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 80vh;
+    }
+
+    .container .color {
+        grid-area: 1/2;
+        border-radius: 10px 10px 0 0;
+        height: 100%;
+
+    }
+
+    .container .content {
+        grid-area: 2/2;
+        padding: 8vw;
+
+    }
+
+    .container .content .title {
+        font-size: clamp(2rem, 5vw, 5rem);
+        margin-bottom: 4vw;
+    }
+
+    .container .content .text {
+        font-size: clamp(1.2rem, 2.2vw, 2.2rem);
+        color: hsla(0, 0%, 100%, 0.75);
+        margin-bottom: 8vw;
+    }
+
+    .container .content #infos h2 {
+        font-size: clamp(1.5rem, 3vw, 3rem);
+        margin-bottom: 8%;
+    }
+
+    .container .content #infos p {
+        font-size: clamp(1rem, 2vw, 2rem);
+        color: hsla(0, 0%, 100%, 0.75);
+        font-weight: 200;
+        font-family: 'Lexend Deca';
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .container .content {
+        text-align: center;
+
+    }
+
+    .container .content #infos {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 5vw;
+        text-align: center;
+    }
+}

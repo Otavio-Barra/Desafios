@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="./index.js"></script>
+  <script src="./index2.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Interactive rating component</title>
+
+</head>
+
+<body>
+  <div class="container" id="container1">
+
+    <div class="star">
+      <img src="./images/icon-star.svg" alt="iconStar">
+    </div>
+
+    <h1>How did we do?</h1>
+
+    <p>Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!</p>
+
+    <div class="options">
+
+      <div><button class="formato" data-item-id="A1">1</button></div>
+      <div><button class="formato" data-item-id="A2">2</button></div>
+      <div><button class="formato" data-item-id="A3">3</button></div>
+      <div><button class="formato" data-item-id="A4">4</button></div>
+      <div><button class="formato" data-item-id="A5">5</button></div>
+
+    </div>
+
+    <button id="btn" class="btn">SUBMIT</button>
+
+  </div>
+
+
+
+  <div class="container" id="container2">
+
+    <img src="./images/illustration-thank-you.svg" alt="tanks">
+
+    <div id="A1" class="conteudo" style="display:block;">
+      <p>You selected 1 out of 5</p>
+    </div>
+    <div id="A2" class="conteudo" style="display:none;">
+      <p>You selected 2 out of 5</p>
+    </div>
+    <div id="A3" class="conteudo" style="display:none;">
+      <p>You selected 3 out of 5</p>
+    </div>
+    <div id="A4" class="conteudo" style="display:none;">
+      <p>You selected 4 out of 5</p>
+    </div>
+    <div id="A5" class="conteudo" style="display:none;">
+      <p>You selected 5 out of 5</p>
+    </div>
+
+    <h1>Thank you!</h1>
+
+    <p>We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!</p>
+  </div>
+</body>
+
+</html>
