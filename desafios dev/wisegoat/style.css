@@ -1,0 +1,80 @@
+:root {
+    --Roxo: #72005F;
+    --Bege: #BAA193;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    width: min(90vw, 1220px);
+    margin: 0 auto;
+    height: 100vh;
+    padding: 5rem 0;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+main img {
+    width: 50%;
+}
+
+main .content h2 {
+    font-size: 3.5rem;
+    color: var(--Bege);
+
+}
+
+main .content h1 {
+    font-size: 9rem;
+    color: var(--Roxo);
+    margin-bottom: 3rem;
+}
+
+main .content button {
+    background-color: var(--Roxo);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 100%;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.5s;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+}
+
+button:hover {
+    transform: translateY(-10px);
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/*Animação*/
+
+img {
+    animation: flutuacao 10s ease-in-out infinite;
+}
+
+@keyframes flutuacao {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+}
